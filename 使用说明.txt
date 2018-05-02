@@ -1,0 +1,35 @@
+
+label 是基于element ui 封装的 由于比较懒
+
+filter  css 是偷用别人的，可以不用注释掉 然后将没用的class 去除  注释放开即可
+
+        <lableFilter :screenList="screenList" @msg="getMsg"></lableFilter>
+
+
+
+screenList: [{
+                    //临时列表
+                    allName: '不限',
+                    title: '品类',
+                    active: false,
+                    shopList: [{name: '蔬菜', active: false}, {name: '磷1肥', active: false}, {
+                        name: '磷肥',
+                        active: false
+                    }, {name: '钾肥', active: false},
+                        {name: '苹果', active: false}]
+                }, {
+                    allName: '不限',
+                    title: '全部',
+                    active: false,
+                    shopList: [{name: '吃的', active: false}, {name: '喝的', active: false}, {name: '穿的', active: false}]
+                }
+                ]
+,
+
+ getMsg(shopList) {
+                console.log(shopList)
+
+
+
+            },
+
